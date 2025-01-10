@@ -1,0 +1,124 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.navbar {
+    background: #000907; 
+    height: 100px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    position: sticky; 
+    top: 0; 
+    z-index: 999; /* Keeps the navbar above */ 
+}
+
+.navbar__container {
+    display: flex; 
+    justify-content: space-between;
+    height: 80px; 
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px; 
+    margin: 0 auto; 
+    padding: 0 auto; 
+}
+
+#navbar__logo { 
+    background-color: #152a3a;
+    background-image: linear-gradient(to top, #1b5a9a 0%, #f8f5f4 100%); 
+    background-size: 100%;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-size: 2rem; 
+}
+
+.navbar__menu {
+    display: flex; 
+    align-items: center; 
+    list-style: none; 
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px; 
+}
+
+/* Links in the navbar */ 
+.navbar__links {
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+}
+
+.navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem; 
+    width: 100%; 
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px; 
+    height: 100%; 
+    width: 100%; 
+    border: none; 
+    outline: none;
+    border-radius: 4px;
+    background: #456192; 
+    color: #fff; 
+}
+
+.button:hover {
+    background: #4837ff; 
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #4837ff; 
+    transition: all 0.3s ease; 
+}
+
+/* Responsive part */
+@media screen and (max-width: 960px) {
+    .navbar__container {
+        padding: 0; 
+    }
+
+    .navbar__menu {
+        display: grid; 
+        grid-template-columns: auto
+
+}
+
+#navbar__logo img {
+    height: auto; 
+    max-width: 30px; 
+    max-height: 100%;
+    width: auto; 
+}
+}
+
+
+
+
